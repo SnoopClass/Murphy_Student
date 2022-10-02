@@ -18,6 +18,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBarView()
+        setTabBarItem()
     }
     
     func setTabBarView() {
@@ -29,5 +30,14 @@ class TabBarViewController: UITabBarController {
         
         setViewControllers([navigationHome, navigationSearch,navigationProfile, navigationWish, navigationCart], animated: false)
     }
-
+    
+    func setTabBarItem() {
+        tabBar.unselectedItemTintColor = .systemGray3
+        tabBar.tintColor = .black
+        homeVC.tabBarItem.image = UIImage.init(systemName: "house")
+        searchVC.tabBarItem.image = UIImage.init(systemName: "magnifyingglass")
+        profileVC.tabBarItem.image = UIImage.init(systemName: "person")
+        wishVC.tabBarItem.image = UIImage.init(systemName: "heart")
+        cartVC.tabBarItem.image = UIImage.init(systemName: "cart")
+    }
 }
