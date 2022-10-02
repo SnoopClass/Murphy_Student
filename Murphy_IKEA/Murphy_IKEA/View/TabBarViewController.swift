@@ -7,23 +7,27 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class TabBarViewController: UITabBarController {
 
+    let homeVC = HomeViewController()
+    let searchVC = SearchViewController()
+    let profileVC = ProfileViewController()
+    let wishVC = WishViewController()
+    let cartVC = CartViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setTabBarView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setTabBarView() {
+        let navigationHome = UINavigationController(rootViewController: homeVC)
+        let navigationSearch = UINavigationController(rootViewController: searchVC)
+        let navigationProfile = UINavigationController(rootViewController: profileVC)
+        let navigationWish = UINavigationController(rootViewController: wishVC)
+        let navigationCart = UINavigationController(rootViewController: cartVC)
+        
+        setViewControllers([navigationHome, navigationSearch,navigationProfile, navigationWish, navigationCart], animated: false)
     }
-    */
 
 }
