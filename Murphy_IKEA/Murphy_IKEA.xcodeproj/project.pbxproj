@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */; };
 		ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */; };
-		ABFC0F8328E962DD00C8E9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F8228E962DD00C8E9BF /* ViewController.swift */; };
-		ABFC0F8628E962DD00C8E9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8428E962DD00C8E9BF /* Main.storyboard */; };
 		ABFC0F8828E962DE00C8E9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */; };
 		ABFC0F8B28E962DE00C8E9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8928E962DE00C8E9BF /* LaunchScreen.storyboard */; };
+		ABFC0FA328E987A900C8E9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA228E987A900C8E9BF /* ViewController.swift */; };
+		ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA428E987B300C8E9BF /* Model.swift */; };
+		ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA628E987BE00C8E9BF /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABFC0F7B28E962DD00C8E9BF /* Murphy_IKEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murphy_IKEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABFC0F8228E962DD00C8E9BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABFC0F8528E962DD00C8E9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABFC0F8A28E962DE00C8E9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFC0F8C28E962DE00C8E9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABFC0FA228E987A900C8E9BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABFC0FA428E987B300C8E9BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ABFC0FA628E987BE00C8E9BF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		ABFC0F7D28E962DD00C8E9BF /* Murphy_IKEA */ = {
 			isa = PBXGroup;
 			children = (
+				ABFC0FA128E9876800C8E9BF /* View */,
+				ABFC0FA028E9874A00C8E9BF /* Model */,
+				ABFC0F9E28E9870000C8E9BF /* Extension */,
 				ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */,
 				ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */,
-				ABFC0F8228E962DD00C8E9BF /* ViewController.swift */,
-				ABFC0F8428E962DD00C8E9BF /* Main.storyboard */,
 				ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */,
 				ABFC0F8928E962DE00C8E9BF /* LaunchScreen.storyboard */,
 				ABFC0F8C28E962DE00C8E9BF /* Info.plist */,
 			);
 			path = Murphy_IKEA;
+			sourceTree = "<group>";
+		};
+		ABFC0F9E28E9870000C8E9BF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC0FA628E987BE00C8E9BF /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ABFC0FA028E9874A00C8E9BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC0FA428E987B300C8E9BF /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABFC0FA128E9876800C8E9BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC0FA228E987A900C8E9BF /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				ABFC0F8B28E962DE00C8E9BF /* LaunchScreen.storyboard in Resources */,
 				ABFC0F8828E962DE00C8E9BF /* Assets.xcassets in Resources */,
-				ABFC0F8628E962DD00C8E9BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFC0F8328E962DD00C8E9BF /* ViewController.swift in Sources */,
+				ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */,
+				ABFC0FA328E987A900C8E9BF /* ViewController.swift in Sources */,
 				ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */,
 				ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */,
+				ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABFC0F8428E962DD00C8E9BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABFC0F8528E962DD00C8E9BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABFC0F8928E962DE00C8E9BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +312,10 @@
 				INFOPLIST_FILE = Murphy_IKEA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +341,10 @@
 				INFOPLIST_FILE = Murphy_IKEA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
