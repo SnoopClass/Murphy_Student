@@ -18,7 +18,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBarView()
-        setTabBarItem()
+        setTabBarUI()
     }
     
     func setTabBarView() {
@@ -31,7 +31,7 @@ class TabBarViewController: UITabBarController {
         setViewControllers([navigationHome, navigationSearch,navigationProfile, navigationWish, navigationCart], animated: false)
     }
     
-    func setTabBarItem() {
+    func setTabBarUI() {
         tabBar.unselectedItemTintColor = .systemGray3
         tabBar.tintColor = .black
         tabBar.backgroundColor = .systemBackground
