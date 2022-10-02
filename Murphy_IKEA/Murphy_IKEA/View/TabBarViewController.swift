@@ -34,6 +34,7 @@ class TabBarViewController: UITabBarController {
     func setTabBarItem() {
         tabBar.unselectedItemTintColor = .systemGray3
         tabBar.tintColor = .black
+        tabBar.backgroundColor = .systemBackground
         homeVC.tabBarItem.image = UIImage.init(systemName: "house")
         searchVC.tabBarItem.image = UIImage.init(systemName: "magnifyingglass")
         profileVC.tabBarItem.image = UIImage.init(systemName: "person")
