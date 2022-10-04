@@ -16,6 +16,11 @@
 		ABFC0F8B28E962DE00C8E9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8928E962DE00C8E9BF /* LaunchScreen.storyboard */; };
 		ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA428E987B300C8E9BF /* Model.swift */; };
 		ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA628E987BE00C8E9BF /* Extension.swift */; };
+		ABFC0FA928E9885D00C8E9BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */; };
+		ABFC0FAD28E9887A00C8E9BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */; };
+		ABFC0FAF28E9888300C8E9BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */; };
+		ABFC0FB128E9888B00C8E9BF /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */; };
+		ABFC0FB328E9889300C8E9BF /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FB228E9889300C8E9BF /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		ABFC0F8C28E962DE00C8E9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABFC0FA428E987B300C8E9BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ABFC0FA628E987BE00C8E9BF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		ABFC0FB228E9889300C8E9BF /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			children = (
 				ABB3922028E9AF460016A7D4 /* SearchViewController.swift */,
 				ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */,
+				ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */,
+				ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */,
+				ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */,
+				ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */,
+				ABFC0FB228E9889300C8E9BF /* CartViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,8 +189,13 @@
 				ABB3922128E9AF460016A7D4 /* SearchViewController.swift in Sources */,
 				ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */,
 				ABB3922328EC19920016A7D4 /* SearchBarButtonView.swift in Sources */,
+				ABFC0FB128E9888B00C8E9BF /* WishViewController.swift in Sources */,
+				ABFC0FAD28E9887A00C8E9BF /* HomeViewController.swift in Sources */,
 				ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */,
 				ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */,
+				ABFC0FB328E9889300C8E9BF /* CartViewController.swift in Sources */,
+				ABFC0FAF28E9888300C8E9BF /* ProfileViewController.swift in Sources */,
+				ABFC0FA928E9885D00C8E9BF /* TabBarViewController.swift in Sources */,
 				ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
