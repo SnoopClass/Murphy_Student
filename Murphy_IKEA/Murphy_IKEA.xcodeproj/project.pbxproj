@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ABB3921F28E9AF1C0016A7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB3921E28E9AF1C0016A7D4 /* Main.storyboard */; };
 		ABB3922128E9AF460016A7D4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3922028E9AF460016A7D4 /* SearchViewController.swift */; };
+		ABB3922328EC19920016A7D4 /* SearchBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */; };
 		ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */; };
 		ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */; };
 		ABFC0F8828E962DE00C8E9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		ABB3921E28E9AF1C0016A7D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABB3922028E9AF460016A7D4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarButtonView.swift; sourceTree = "<group>"; };
 		ABFC0F7B28E962DD00C8E9BF /* Murphy_IKEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murphy_IKEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				ABB3922028E9AF460016A7D4 /* SearchViewController.swift */,
+				ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				ABB3922128E9AF460016A7D4 /* SearchViewController.swift in Sources */,
 				ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */,
+				ABB3922328EC19920016A7D4 /* SearchBarButtonView.swift in Sources */,
 				ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */,
 				ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */,
 				ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */,
