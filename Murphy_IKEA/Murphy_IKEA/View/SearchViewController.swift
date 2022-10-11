@@ -7,31 +7,31 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+final class SearchViewController: UIViewController {
 
-    let scrollView = UIScrollView()
-    let contentView = UIView()
+    private let scrollView = UIScrollView()
+    private let contentView = UIView()
     private var safeArea: UILayoutGuide {
         get { self.view.safeAreaLayoutGuide }
     }
-    let titleLabel = UILabel()
-    let searchBarButtonView: SearchBarButton = {
+    private let titleLabel = UILabel()
+    private let searchBarButtonView: SearchBarButton = {
         let view = SearchBarButton()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    let recentView = UIView()
-    let searchProductView = UIView()
-    let campaignView = UIView()
-    let popularView = UIView()
-    let infoView = UIView()
+    private let recentView = UIView()
+    private let searchProductView = UIView()
+    private let campaignView = UIView()
+    private let popularView = UIView()
+    private let infoView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
     }
     
-    func configureView() {
+    private func configureView() {
         view.backgroundColor = .systemBackground
         configureScrollView()
         configureTitle()
@@ -43,7 +43,7 @@ class SearchViewController: UIViewController {
         configureInfoView()
     }
     
-    func configureScrollView() {
+    private func configureScrollView() {
         view.addSubview(scrollView)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.alwaysBounceVertical = true
@@ -65,7 +65,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureTitle() {
+    private func configureTitle() {
         titleLabel.text = "검색"
         titleLabel.font = UIFont.systemFont(ofSize: 25, weight: .bold)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -76,7 +76,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureSearchBarButton() {
+    private func configureSearchBarButton() {
         contentView.addSubview(searchBarButtonView)
         NSLayoutConstraint.activate([
             searchBarButtonView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
@@ -87,7 +87,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureRecentView() {
+    private func configureRecentView() {
         contentView.addSubview(recentView)
         recentView.translatesAutoresizingMaskIntoConstraints = false
         recentView.backgroundColor = .purple
@@ -100,7 +100,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureSearchProductView() {
+    private func configureSearchProductView() {
         contentView.addSubview(searchProductView)
         searchProductView.translatesAutoresizingMaskIntoConstraints = false
         searchProductView.backgroundColor = .green
@@ -113,7 +113,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureCampaignView() {
+    private func configureCampaignView() {
         contentView.addSubview(campaignView)
         campaignView.translatesAutoresizingMaskIntoConstraints = false
         campaignView.backgroundColor = .orange
@@ -126,7 +126,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configurePopularView() {
+    private func configurePopularView() {
         contentView.addSubview(popularView)
         popularView.translatesAutoresizingMaskIntoConstraints = false
         popularView.backgroundColor = .blue
@@ -139,7 +139,7 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureInfoView() {
+    private func configureInfoView() {
         contentView.addSubview(infoView)
         infoView.translatesAutoresizingMaskIntoConstraints = false
         infoView.backgroundColor = .systemPink

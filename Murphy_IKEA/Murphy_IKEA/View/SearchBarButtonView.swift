@@ -7,8 +7,8 @@
 
 import UIKit
 
-public class SearchBarButton: UIView {
-    let imageView: UIImageView = {
+final class SearchBarButton: UIView {
+    private let imageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.image = UIImage(systemName: "magnifyingglass")
@@ -16,7 +16,7 @@ public class SearchBarButton: UIView {
         return view
     }()
     
-    let descriptionLabal: UILabel = {
+    private let descriptionLabal: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "무엇을 찾고 있나요?"
@@ -35,7 +35,7 @@ public class SearchBarButton: UIView {
         setupLayout()
     }
     
-    func setupLayout() {
+    private func setupLayout() {
         addSubview(imageView)
         addSubview(descriptionLabal)
         layer.cornerRadius = 20
