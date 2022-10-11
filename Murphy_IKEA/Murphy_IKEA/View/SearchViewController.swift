@@ -20,6 +20,15 @@ final class SearchViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    lazy private var stackView: UIStackView = {
+       let stackView = UIStackView(arrangedSubviews: [recentView, searchProductView, campaignView, popularView])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 80
+        return stackView
+    }()
     private let recentView = UIView()
     private let searchProductView = UIView()
     private let campaignView = UIView()
@@ -36,6 +45,7 @@ final class SearchViewController: UIViewController {
         configureScrollView()
         configureTitle()
         configureSearchBarButton()
+        configureStackView()
         configureRecentView()
         configureSearchProductView()
         configureCampaignView()
@@ -71,7 +81,7 @@ final class SearchViewController: UIViewController {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10)
         ])
     }
@@ -87,12 +97,21 @@ final class SearchViewController: UIViewController {
         ])
     }
     
+    private func configureStackView() {
+        contentView.addSubview(stackView)
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: searchBarButtonView.bottomAnchor, constant: 80),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)
+        ])
+    }
+    
     private func configureRecentView() {
-        contentView.addSubview(recentView)
         recentView.translatesAutoresizingMaskIntoConstraints = false
         recentView.backgroundColor = .purple
         NSLayoutConstraint.activate([
-            recentView.topAnchor.constraint(equalTo: searchBarButtonView.bottomAnchor, constant: 40),
+            recentView.topAnchor.constraint(equalTo: stackView.topAnchor),
             recentView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             recentView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             recentView.heightAnchor.constraint(equalToConstant: 250),
@@ -101,11 +120,9 @@ final class SearchViewController: UIViewController {
     }
     
     private func configureSearchProductView() {
-        contentView.addSubview(searchProductView)
         searchProductView.translatesAutoresizingMaskIntoConstraints = false
         searchProductView.backgroundColor = .green
         NSLayoutConstraint.activate([
-            searchProductView.topAnchor.constraint(equalTo: recentView.bottomAnchor, constant: 40),
             searchProductView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             searchProductView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             searchProductView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
@@ -114,11 +131,9 @@ final class SearchViewController: UIViewController {
     }
     
     private func configureCampaignView() {
-        contentView.addSubview(campaignView)
         campaignView.translatesAutoresizingMaskIntoConstraints = false
         campaignView.backgroundColor = .orange
         NSLayoutConstraint.activate([
-            campaignView.topAnchor.constraint(equalTo: searchProductView.bottomAnchor, constant: 50),
             campaignView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             campaignView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             campaignView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
@@ -127,11 +142,9 @@ final class SearchViewController: UIViewController {
     }
     
     private func configurePopularView() {
-        contentView.addSubview(popularView)
         popularView.translatesAutoresizingMaskIntoConstraints = false
         popularView.backgroundColor = .blue
         NSLayoutConstraint.activate([
-            popularView.topAnchor.constraint(equalTo: campaignView.bottomAnchor, constant: 60),
             popularView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             popularView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             popularView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
@@ -144,7 +157,7 @@ final class SearchViewController: UIViewController {
         infoView.translatesAutoresizingMaskIntoConstraints = false
         infoView.backgroundColor = .systemPink
         NSLayoutConstraint.activate([
-            infoView.topAnchor.constraint(equalTo: popularView.bottomAnchor, constant: 50),
+            infoView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 80),
             infoView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             infoView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             infoView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
