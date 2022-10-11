@@ -26,7 +26,6 @@ class SearchViewController: UIViewController {
     let popularView = UIView()
     let infoView = UIView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
