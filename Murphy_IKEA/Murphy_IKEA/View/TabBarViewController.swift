@@ -7,13 +7,13 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
 
-    let homeVC = HomeViewController()
-    let searchVC = SearchViewController()
-    let profileVC = ProfileViewController()
-    let wishVC = WishViewController()
-    let cartVC = CartViewController()
+    private let homeVC = HomeViewController()
+    private let searchVC = SearchViewController()
+    private let profileVC = ProfileViewController()
+    private let wishVC = WishViewController()
+    private let cartVC = CartViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class TabBarViewController: UITabBarController {
         setTabBarUI()
     }
     
-    func setTabBarView() {
+    private func setTabBarView() {
         let navigationHome = UINavigationController(rootViewController: homeVC)
         let navigationSearch = UINavigationController(rootViewController: searchVC)
         let navigationProfile = UINavigationController(rootViewController: profileVC)
@@ -31,7 +31,7 @@ class TabBarViewController: UITabBarController {
         setViewControllers([navigationHome, navigationSearch,navigationProfile, navigationWish, navigationCart], animated: false)
     }
     
-    func setTabBarUI() {
+    private func setTabBarUI() {
         tabBar.unselectedItemTintColor = .systemGray3
         tabBar.tintColor = .black
         tabBar.backgroundColor = .systemBackground

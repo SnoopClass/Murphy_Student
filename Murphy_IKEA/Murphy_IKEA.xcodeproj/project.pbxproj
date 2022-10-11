@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABB3921D28E991BD0016A7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB3921C28E991BD0016A7D4 /* Main.storyboard */; };
+		ABB3921F28E9AF1C0016A7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB3921E28E9AF1C0016A7D4 /* Main.storyboard */; };
+		ABB3922128E9AF460016A7D4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3922028E9AF460016A7D4 /* SearchViewController.swift */; };
+		ABB3922328EC19920016A7D4 /* SearchBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */; };
 		ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */; };
 		ABFC0F8128E962DD00C8E9BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */; };
 		ABFC0F8828E962DE00C8E9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */; };
@@ -15,7 +17,6 @@
 		ABFC0FA528E987B300C8E9BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA428E987B300C8E9BF /* Model.swift */; };
 		ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA628E987BE00C8E9BF /* Extension.swift */; };
 		ABFC0FA928E9885D00C8E9BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */; };
-		ABFC0FAB28E9887100C8E9BF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FAA28E9887100C8E9BF /* SearchViewController.swift */; };
 		ABFC0FAD28E9887A00C8E9BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */; };
 		ABFC0FAF28E9888300C8E9BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */; };
 		ABFC0FB128E9888B00C8E9BF /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */; };
@@ -23,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ABB3921C28E991BD0016A7D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ABB3921E28E9AF1C0016A7D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ABB3922028E9AF460016A7D4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarButtonView.swift; sourceTree = "<group>"; };
 		ABFC0F7B28E962DD00C8E9BF /* Murphy_IKEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murphy_IKEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFC0F7E28E962DD00C8E9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		ABFC0FA428E987B300C8E9BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ABFC0FA628E987BE00C8E9BF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		ABFC0FAA28E9887100C8E9BF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 				ABFC0F8028E962DD00C8E9BF /* SceneDelegate.swift */,
 				ABFC0F8728E962DE00C8E9BF /* Assets.xcassets */,
 				ABFC0F8928E962DE00C8E9BF /* LaunchScreen.storyboard */,
-				ABB3921C28E991BD0016A7D4 /* Main.storyboard */,
+				ABB3921E28E9AF1C0016A7D4 /* Main.storyboard */,
 				ABFC0F8C28E962DE00C8E9BF /* Info.plist */,
 			);
 			path = Murphy_IKEA;
@@ -102,9 +104,10 @@
 		ABFC0FA128E9876800C8E9BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3922028E9AF460016A7D4 /* SearchViewController.swift */,
+				ABB3922228EC19920016A7D4 /* SearchBarButtonView.swift */,
 				ABFC0FA828E9885D00C8E9BF /* TabBarViewController.swift */,
 				ABFC0FAC28E9887A00C8E9BF /* HomeViewController.swift */,
-				ABFC0FAA28E9887100C8E9BF /* SearchViewController.swift */,
 				ABFC0FAE28E9888300C8E9BF /* ProfileViewController.swift */,
 				ABFC0FB028E9888B00C8E9BF /* WishViewController.swift */,
 				ABFC0FB228E9889300C8E9BF /* CartViewController.swift */,
@@ -170,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB3921D28E991BD0016A7D4 /* Main.storyboard in Resources */,
+				ABB3921F28E9AF1C0016A7D4 /* Main.storyboard in Resources */,
 				ABFC0F8B28E962DE00C8E9BF /* LaunchScreen.storyboard in Resources */,
 				ABFC0F8828E962DE00C8E9BF /* Assets.xcassets in Resources */,
 			);
@@ -183,8 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB3922128E9AF460016A7D4 /* SearchViewController.swift in Sources */,
 				ABFC0FA728E987BE00C8E9BF /* Extension.swift in Sources */,
-				ABFC0FAB28E9887100C8E9BF /* SearchViewController.swift in Sources */,
+				ABB3922328EC19920016A7D4 /* SearchBarButtonView.swift in Sources */,
 				ABFC0FB128E9888B00C8E9BF /* WishViewController.swift in Sources */,
 				ABFC0FAD28E9887A00C8E9BF /* HomeViewController.swift in Sources */,
 				ABFC0F7F28E962DD00C8E9BF /* AppDelegate.swift in Sources */,
